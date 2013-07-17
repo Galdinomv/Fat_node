@@ -11,7 +11,7 @@ endif
 CXX=g++ 
 LDFLAGS = -lpthread
 MACHINE := $(shell uname -n) 
-CFLAGS := -Wall $(DEBUG) -D$(MACHINE) $(TM_FLAGS) $(VERSION)
+CFLAGS := -m32 -Wall $(DEBUG) -D$(MACHINE) $(TM_FLAGS) $(VERSION)
 
 #ifneq ($(MY_FLAGS), )
 #	CFLAGS += $(MY_FLAGS)
